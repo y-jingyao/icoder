@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCoder</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1><i class="fa fa-code mr-2"></i>iCoder</h1>
+        <p class="header-desc">A collection coding</p>
+        <p>This website focuses on open-source code sharing.
+            If you are interested in sharing your personal code or have questions about the existing code,
+            please feel free to contact the author of this website via the link at the bottom of the page.</p>
+        <button id="languageToggle" class="theme-toggle-btn" style="right: 70px;">
+            <i class="fa fa-language"></i>
+        </button>
+        <button id="themeToggle" class="theme-toggle-btn">
+            <i class="fa fa-moon-o"></i>
+        </button>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <div class="search-container">
+            <div class="search-wrapper">
+                <i class="fa fa-search search-icon"></i>
+                <input type="text" id="searchInput" placeholder="Search by filename or description...">
+                <button id="searchButton">
+                    <i class="fa fa-search mr-1"></i>Search
+                </button>
+            </div>
+        </div>
+        <div id="file-list-container">
+            <div class="loading">
+                <div class="spinner"></div>
+                <p>Loading code files...</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div class="scroll-buttons">
+    <button id="backToTop" class="scroll-btn" title="Back to Top">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+    <button id="goToBottom" class="scroll-btn" title="Go to Bottom">
+        <i class="fa fa-arrow-down"></i>
+    </button>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="footer-links">
+            <a href="https://github.com/y-jingyao" target="_blank" title="GitHub"><i class="fa fa-github"></i></a>
+            <a href="mailto:jingyao_yang@outlook.com" target="_blank" title="Email"><i class="fa fa-envelope"></i></a>
+        </div>
+        <p>&copy; 2025 yanghx </p>
+    </div>
+</footer>
+
+<div class="disclaimer-box" id="disclaimerBox">
+    <p>
+        <strong>Disclaimer：</strong>
+        This website only provides open-source code exchange services.
+        Users shall bear sole responsibility for the legality, security and usage risks of all codes.
+        <a href="Disclaimer.html" target="_blank">Disclaimer</a>。
+    </p>
+    <button class="disclaimer-close" id="disclaimerClose">I Understand</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
